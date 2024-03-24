@@ -32,7 +32,9 @@ export default function SearchHeader() {
           Sign In
         </button>
       </div>
-      <SearchHeaderOptions />
+      <Suspense fallback="Loading...">
+        <SearchHeaderOptions />
+      </Suspense>
     </header>
   );
 }
